@@ -1,7 +1,9 @@
 const express = require('express');
 const mongoose = require("mongoose");
+const cors = require("cors");
 
 var app = express();
+app.use(cors());
 
 // Server configuration
 app.use(express.json());
